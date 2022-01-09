@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Open+Sans&family=Poppins:wght@500&display=swap');
+
+
+body{
+  margin: 0px;
+  background-color: #D3DEDC;
+}
+
+
+
+.grid{
+  
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 1fr,1fr;
+  grid-template-areas: "grid-1 grid-1"
+  "grid-2 grid-3";
+height: auto;
+  width: 100vh ;
+justify-content: center;
+text-align: center;
+margin: auto;
+margin-top: 10px;
+/* transform: translate(0, 50%); */
+font-family: 'Karla', sans-serif;
+}
+
+#grid-1{
+  grid-area: grid-1;
+  background-color: hsl(204, 43%, 93%);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: left;
+  padding: 50px;
+  
+}
+#grid-2{
+  grid-area: grid-2;
+  background-color: #35858B;
+  border-bottom-left-radius: 10px;
+  text-align: left;
+  padding: 50px;
+  width: 50vh;
+}
+#grid-3{
+grid-area: grid-3;
+background-color: #4FBDBA;
+border-bottom-right-radius: 10px;
+text-align: left;
+padding: 50px;
+width: 50vh;
+}
+.attribution{
+  position: absolute;
+  top: 50px;
+  position: relative;
+  text-align: center;
+  color: grey;
+  font-size: 1rem;
+}
+
+.btn{
+  margin-top: 50px;
+  padding: 11px 100px;
+  
+}
+.btn:hover{
+  background-color: hsl(71, 73%, 54%);
+}
+span{
+  color: #4FBDBA ;
+}
+p{
+  color: #FFF;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .grid{
+    display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 0.5fr 0.5fr 0.5fr;
+grid-template-areas: "grid-1" "grid-2" "grid-3";
+text-align: center;
+width: 65vh;
+margin-top: 70px;
+  }
+  #grid-2{
+    width: 65vh;
+    border-bottom-left-radius: 0;
+  }
+  #grid-3{
+    width: 65vh;
+    border-bottom-left-radius: 10px;
+  }
+.attribution{
+  top: 10px;
+}
+}
+
+
